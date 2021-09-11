@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo / Noticias</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;900&family=Raleway:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__equipo"><!-- logo y tituilo -->
+            <div class="header__logo" >
+                <img src="https://www.lnbchile.com/wp-content/uploads/2019/08/cd-castro-logo-200x200.png" alt="Deportes">
+            </div>
+            <div class="header__titulo">
+                <h1>CLUB DEPORTIVO</h1>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="nav__pages"> 
+                <a href="../index.html">Inicio</a>
+                <a href="./equipos.html">Equipos</a>
+                <a href="./competiciones.html">Competiciones</a>
+                <a href="./calendario.html">Calendario</a>
+                <a href="./galeria.html">Galeria</a>
+                <a class="pages_activa" href="./contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>    
+    <main>
+        <div class="pages">
+            <h2 class="pages__titulo">Contacto</h2>
+            <div class="formulario"><!-- formulario -->
+                <form action=""method="GET">
+                    <fieldset>
+                        <legend>Formulario de contacto</legend>
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" id="nombre" required>
+                        <br><br>
+                        <label for="correo">Email*</label>
+                        <input type="text" id="correo" required>
+                        <br><br>
+                        <label for="rama">Rama*</label>
+                        <select name="rama" id="rama">
+                            <option value="fem">Femenina</option>
+                            <option value="masc">Masculina</option>
+                        </select>       
+                        <br><br>
+                        <label for="nombre">Comentario*</label>
+                        <textarea id="comentario" required></textarea>
+                        <br><br>
+                        <input type="checkbox" required>
+                        <label for="acepta">Acepto los <a href="">terminos</a></label>
+                        <br><br> 
+                        <input type="reset" value="Limpiar">
+                        <input type="submit" value="Enviar">
+                        <p>Los campos con * son requeridos.</p>
+                        <br><br>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer"><!-- contenido footer -->
+            <div class="footer__izq">
+                <img class="footer__logo" src="https://www.lnbchile.com/wp-content/uploads/2019/08/cd-castro-logo-200x200.png" alt="Deportes">
+                <p>Club Deportivo. 2021.</p>
+            </div>
+            <div class="footer_contenido">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./equipos.html">Equipos</a></li>
+                    <li><a href="./competiciones.html">Competiciones</a></li>
+                    <li><a href="./calendario.html">Calendario</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__redes">   
+                <a href="https://twitter.com/" target="_blank"><img class="footer__red" src="https://w7.pngwing.com/pngs/872/50/png-transparent-computer-icons-social-media-logo-twitter-social-media-blue-logo-social-media.png" alt="twitter"></a> 
+                <a href="https://www.facebook.com/" target="_blank"><img class="footer__red" src="https://w7.pngwing.com/pngs/213/828/png-transparent-facebook-logo-facebook-messenger-logo-social-media-icon-facebook-icon-blue-text-rectangle.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="footer__red" src="https://w7.pngwing.com/pngs/722/1011/png-transparent-logo-icon-instagram-logo-instagram-logo-purple-violet-text.png" alt="instagram"></a>
+            </div>
+        </div>
+        <div class="flecha">
+            <a href="#top"><div class="arriba"></div><div class="cent"></div></a>     
+        </div>
+    </footer>
+</body>
+
+</html>

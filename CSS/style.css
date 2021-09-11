@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+.header{
+    background-image: linear-gradient(to bottom,orange, rgb(250, 181, 92));
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.header__equipo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}    
+.header__logo{
+    display:block;
+    animation: bounceInDown;
+    animation-duration: 1s;
+    height: 7em;
+}
+.header__logo img{
+    height: 7em;
+}
+.header__titulo{
+    height: 8em;
+    display: flex;
+    align-items: center;
+}
+.header__titulo h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    color: teal;
+    animation: zoomInUp;
+    animation-duration: .7s;
+    margin: auto;
+}
+.header__nav{
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: row;
+    animation: slideInRight;
+    animation-duration: .7s;
+}
+.pages_activa{
+    padding-left: 5px;
+    background-color: teal;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+.nav__pages{
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style:none;
+    letter-spacing: 2px;
+    display:inline-block;
+}
+.nav__pages a{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav__pages a:hover{
+    padding-left: 5px;
+    background-color: teal;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    color:whitesmoke;
+    font-weight:900;
+    font-size: 30px;
+    background-color:teal;
+    margin:10px;
+    margin-bottom: 30px;
+    padding-left:15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+.titulo:hover{
+    animation: pulse; 
+    animation-duration: 1s;
+}
+/* contenido index */
+.principal{
+    display: grid;
+    grid-template-areas: "noticias  calendario" "redes resultados";
+    grid-template-columns: 60% 40%;
+    background-color: rgba(243, 138, 0, 0.623);
+}
+/* seccion de noticias */
+.principal__noticias{
+    grid-area: noticias;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.noticias__articulos{
+    padding:15px;
+    border: steelblue;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+.articulo{
+    color: rgba(22, 22, 22, 0.699);
+    background-color: rgba(219, 119, 26, 0.425);
+    margin:10px;
+    padding:20px;
+    border: steelblue;
+    text-align: justify;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.articulo:hover{
+    transform: scale(1.1);
+}
+.articulo span{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+.articulo span a{
+    text-decoration: none;
+    color: teal;
+}
+.articulo span a:hover{
+    color: whitesmoke;
+}
+/* seccion de calendario */
+.principal__cal{
+    grid-area: calendario;
+    padding: 20px;
+}
+.cal{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.cal__cal {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.cal_grid{
+    overflow: hidden;
+}
+.titulo_calendario{
+    display: flex;
+    justify-content: space-evenly;
+}
+.titulo_calendario p{
+    font-size: 30px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background-color: teal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.calendario_grid{
+    display: grid;
+    
+    grid-template-areas: "dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia";
+}
+.dia{
+    background-color: rgba(255, 224, 224, 0.911);
+    border: 1px solid teal;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(189, 123, 2);
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+}
+.dia:hover{
+    animation: pulse;
+    animation-duration: 0.3s;
+    }
+/* seccion redes sociales */
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.sociales{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.redes-facebook{
+    align-self: flex-end;
+}
+
+.redes-twitter{
+    margin: auto;
+
+}
+/* seccion de ultimos resultados */
+.ultimos{
+    grid-area: resultados;
+}
+.resultados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 0.7em;
+    padding: 1em;
+}
+.resulta2{
+    background-image: radial-gradient(rgba(255, 206, 149, 0.781) 50%,rgba(236, 130, 10, 0.781));
+    letter-spacing: 0.1em;
+    width: 10em;
+    height: 14em;
+    border: 0.4em dotted teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resulta2 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: rgb(167, 61, 61);
+}
+.resultado:nth-child(even){
+    background-image: radial-gradient(rgba(255, 206, 149, 0.781) 70%,teal);
+    letter-spacing: 3px;
+    width: 6em;
+    height: 8em;
+    border: 0.4em dotted orange;
+}
+.resulta2:hover{
+    animation: headShake;
+    animation-duration: .1s;
+    transform: scale(1.2);
+}
+/* footer */
+.footer{
+    background-image: linear-gradient(to top,orange, rgb(250, 181, 92));
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    height: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-around;
+}
+.footer__izq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.footer__izq p{
+    display: block;
+    color: whitesmoke;
+    background-color: teal;
+    font-family: 'Raleway', sans-serif;
+    padding:5px;
+    font-weight: 700;
+}
+.footer__logo{
+    height: 100px;
+    margin: auto;
+    display:block;
+ }
+@keyframes botar {
+    0%{
+        transform: rotate(0deg) 
+    }
+    40%{
+        transform: rotate(2160deg) scale(3)
+    }
+    100%{
+        transform: rotate(4320deg)
+    }
+}
+.footer .footer__logo:hover{
+    animation-name: botar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+.footer p{
+    margin: auto;
+    border-radius: 10px;
+    height: 2em;
+}
+@keyframes texto {
+    0%{
+        transform: skew(0deg,0deg) scale(1)
+    }
+    25%{
+        color: orange;
+        transform: skew(-5deg,-5deg) scale(2)
+    }
+    50%{
+        color: whitesmoke;
+        transform: skew(0deg,0deg) scale(1)
+    }
+    75%{
+        color: orange;
+        transform: skew(5deg,5deg) scale(2)
+    }
+    100%{
+        color: whitesmoke;
+        transform: skew(0deg,0deg) scale(1)
+    }
+}
+.footer p:hover{
+    animation: texto 2s infinite;
+}
+.footer_contenido{
+    display: flex;
+}
+
+.footer_contenido ul{
+    margin: auto;
+    text-align: center;
+}
+.footer_contenido li{
+    list-style:none;
+    padding: 3px;
+    margin: 2px;
+    width: 300px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+.footer_contenido a{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: teal;
+    font-weight: 700;
+}
+.footer_contenido a:hover{
+    display: block;
+    color: whitesmoke;
+    transform: scale(2);
+    font-weight: 900;
+}
+.footer__redes{
+    width: 10%;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__red{
+    height:30px;
+}
+.footer__red:hover{
+    animation: headShake;
+    animation-duration: .1s;
+    transform: scale(1.5);
+}
+/* general paginas */
+.pages__titulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight:900;
+    color: whitesmoke;
+    background-color: teal;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pages__titulo:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+.pages{
+    background-color: rgba(243, 138, 0, 0.623);
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#ramaFem{
+    color: rgb(31, 29, 29);
+    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal );
+    margin:10px;
+    padding:25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: inline-block;
+	scroll-margin-top: 10em;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#ramaMasc{
+    color: rgb(31, 29, 29);
+    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal );
+    margin:10px;
+    padding:25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: inline-block;
+    scroll-margin-top: 10em;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.ramas{
+    display: inline-block;
+}
+.ramas a .titulo:hover{
+    background-color: whitesmoke;
+    color: teal;
+}
+.ramas .titulo{
+    display: inline-block;
+    padding: 20px;
+}
+/* flecha de regreso arriba */
+.flecha{
+    position: fixed;
+    bottom: 70px;
+    right: 100px;
+    z-index: 99;
+}
+.flecha:hover{
+    animation: wobble;
+    animation-duration: 1s;
+} 
+.arriba{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-top: 15px solid whitesmoke;
+    border-right: 15px solid whitesmoke;
+    transform: rotate(-45deg);
+}
+.cent{
+    position: absolute;
+    width: 70px;
+    height:60px;
+    border-right: 15px solid whitesmoke;
+    transform: translateX(-35px);
+}
+/* pagina equipos */
+.plantel{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+.plantel td{
+    background-color:rgba(255, 255, 255, 0.603); 
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid peru;  
+    color: black;
+}
+.plantel tr:hover{
+    background-color: rgba(255, 255, 255, 0.699);
+}
+.plantel th{
+    font-weight: bolder;
+    background-color: teal;
+    border: 1px solid white;
+    color: whitesmoke;
+    font-size: 25px;
+}
+/* pagina Competiciones */
+.anho{
+    padding-left: 2px;
+    padding-right: 2px;
+    list-style:none;
+    width: 20%;
+    margin: auto;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.anho li{
+    display: block;
+}
+.anho li:hover{
+    display: block;
+    transform: scale(1.5);
+    transition: 1s;
+}
+.anho a{
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgba(37, 211, 211, 0.295);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.anho a:hover{
+    background-color: teal;
+}
+#estadisticasFem{
+    scroll-margin-top: 12em;
+}
+.competicionFem_anho{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    background-color:rgba(86, 255, 255, 0.555); 
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(2, 225, 255);  
+    color: rgb(255, 16, 16);
+    font-weight: 600;
+}
+.competicionFem_anho td{
+    background-color:rgba(238, 137, 159, 0.623); 
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(255, 128, 2);  
+    color: rgb(85, 20, 20);
+    font-weight: 600;
+}
+.competicionFem_anho th{
+    font-weight: bolder;
+    background-color: teal;
+    border: 1px solid white;
+    color: whitesmoke;
+}
+.competicionFem_anho tr:hover{
+    background-color:rgba(240, 27, 73, 0.623); 
+}
+#estadisticasMasc{
+    scroll-margin-top: 12em;
+}
+.competicionMasc_anho{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    background-color:rgba(86, 255, 255, 0.555); 
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(255, 128, 2);  
+    color: rgb(255, 16, 16);
+    font-weight: 600;
+}
+.competicionMasc_anho td{
+    background-color:rgba(245, 196, 73, 0.623); 
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(255, 128, 2);  
+    color: rgb(85, 20, 20);
+    font-weight: 600;
+}
+.competicionMasc_anho th{
+    font-weight: bolder;
+    background-color: teal;
+    border: 1px solid white;
+    color: whitesmoke;
+}
+.competicionMasc_anho tr:hover{
+    background-color:rgba(235, 171, 10, 0.623); 
+}
+
+/* pagina calendario */
+.calendario__calendario{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+.calendario__calendario td{
+    background-color:rgba(199, 223, 223, 0.555); 
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(243, 197, 151);  
+    color: rgb(3, 75, 122);
+    font-weight: 600;
+}
+.calendario__calendario tr:hover{
+    background-color:rgba(68, 196, 196, 0.712); 
+
+}
+.calendario__calendario th{
+    font-weight: bolder;
+    background-color: teal;
+    border: 1px solid white;
+    color: whitesmoke;
+}
+/* pagina galeria */
+.galeria__galeria{
+    margin: auto;
+    width: 80%;
+}
+.galeri{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.galeri li{
+    height: 250px;
+    flex-grow: 1;
+    list-style: none;
+}
+.galeri img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.galeri img:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+li:last-child {
+    flex-grow: 10;
+  }
+/* pagina contacto */
+.formulario{
+    font-family: 'Raleway', sans-serif;
+    background-image:linear-gradient(to top,rgb(6, 95, 95),teal) ;
+    color: whitesmoke;
+}
+.formulario legend{
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.formulario fieldset{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.formulario label{
+    font-weight: 500;
+    padding-left: 40px;
+}
+.formulario input{
+    width: 500px;
+    margin-bottom: 25px;
+}
+.formulario textarea{
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+.formulario select{
+    width: 200px;
+}
+.formulario [type="reset"]{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.formulario [type="submit"]{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.formulario [type="checkbox"]{
+    width: 200px;
+}
+.formulario [for="acepta"]{
+    font-size: 20px;
+    font-weight: 700;
+}
+.formulario [for="acepta"] a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration:none;
+    color: yellow;
+}
+.formulario fieldset p{
+    padding-top: 20px;
+    font-weight: 900;
+    color: yellow;
+}
