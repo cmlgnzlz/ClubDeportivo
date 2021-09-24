@@ -103,14 +103,10 @@ html{
 }
 /* contenido index */
 .principal{
-    display: grid;
-    grid-template-areas: "noticias  calendario" "redes resultados";
-    grid-template-columns: 60% 40%;
     background-color: rgba(243, 138, 0, 0.623);
 }
 /* seccion de noticias */
 .principal__noticias{
-    grid-area: noticias;
     font-family: 'Raleway', sans-serif;
     padding: 20px;
     display: flex;
@@ -159,7 +155,6 @@ html{
 }
 /* seccion de calendario */
 .principal__cal{
-    grid-area: calendario;
     padding: 20px;
 }
 .cal{
@@ -274,7 +269,6 @@ html{
     background-image: linear-gradient(to top,orange, rgb(250, 181, 92));
     padding: 20px;
     margin: auto;
-    display: flex;
     gap: 30px;
     height: 200px;
     padding-left: 10%;
@@ -353,14 +347,13 @@ html{
 .footer_contenido{
     display: flex;
 }
-
 .footer_contenido ul{
     margin: auto;
     text-align: center;
 }
 .footer_contenido li{
     list-style:none;
-    padding: 3px;
+    padding: 2px;
     margin: 2px;
     width: 300px;
     text-transform: lowercase;
@@ -369,6 +362,7 @@ html{
 .footer_contenido a{
     display: block;
     font-family: 'Raleway', sans-serif;
+    font-size: .8em;
     text-decoration: none;
     color: teal;
     font-weight: 700;
@@ -383,7 +377,7 @@ html{
     width: 10%;
     display: flex;
     gap: 5px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .footer__red{
@@ -462,7 +456,7 @@ html{
 /* flecha de regreso arriba */
 .flecha{
     position: fixed;
-    bottom: 70px;
+    bottom: 100px;
     right: 100px;
     z-index: 99;
 }
@@ -483,7 +477,7 @@ html{
     width: 70px;
     height:60px;
     border-right: 15px solid whitesmoke;
-    transform: translateX(-35px);
+    transform: translateX(-29px);
 }
 /* pagina equipos */
 .plantel{
