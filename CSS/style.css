@@ -8,50 +8,45 @@ html{
 /* header */
 .header{
     background-image: linear-gradient(to bottom,orange, rgb(250, 181, 92));
-    width: 100%;
     z-index: 100;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .header__equipo{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-
 }    
 .header__logo{
     display:block;
     animation: bounceInDown;
     animation-duration: 1s;
-    height: 7em;
 }
 .header__logo img{
     height: 7em;
 }
-.header__titulo{
-    height: 8em;
-    display: flex;
-    align-items: center;
-}
 .header__titulo h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 5em;
+    font-size: 6em;
     color: teal;
     animation: zoomInUp;
     animation-duration: .7s;
-    margin: auto;
+}
+@media only screen and (max-width: 1580px) {
+    .header__titulo h1{
+        font-size: 4em;
+    }
+    .header__logo img{
+        height: 4em;
+    }
 }
 .header__nav{
     font-family: 'Oswald', sans-serif;
     font-size: 26px;
     text-transform: uppercase;
-    display:flex;
-    flex-direction: row;
     animation: slideInRight;
     animation-duration: .7s;
+    display: flex;
+    align-items: center;
 }
 .pages_activa{
     padding-left: 5px;
@@ -160,12 +155,10 @@ html{
 .cal{
     display: flex;
     justify-content: center;
-    max-width: 100%;
 }
 .cal__cal {
     display: flex;
     justify-content: center;
-    max-width: 100%;
 }
 .cal_grid{
     overflow: hidden;
@@ -186,7 +179,6 @@ html{
 }
 .calendario_grid{
     display: grid;
-    
     grid-template-areas: "dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia";
 }
 .dia{
@@ -202,10 +194,34 @@ html{
 .dia:hover{
     animation: pulse;
     animation-duration: 0.3s;
+}
+@media only screen and (max-width: 1580px) {
+    .dia {
+        width: 75px;
+        height: 75px;
     }
+}
+@media only screen and (max-width: 1300px) {
+    .dia {
+        width: 62px;
+        height: 62px;
+    }
+}
+  @media only screen and (max-width: 1084px) {
+    .dia {
+        width: 55px;
+        height: 55px;
+    }
+  }
+@media only screen and (max-width: 991px) {
+    .dia {
+        width: 120px;
+        height: 90px;
+    }
+}
+  
 /* seccion redes sociales */
 .redes{
-    grid-area: redes;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -213,15 +229,7 @@ html{
 .sociales{
     display: flex;
     flex-direction: row;
-    margin: auto;
-}
-.redes-facebook{
-    align-self: flex-end;
-}
-
-.redes-twitter{
-    margin: auto;
-
+    justify-content: center;
 }
 /* seccion de ultimos resultados */
 .ultimos{
@@ -230,7 +238,7 @@ html{
 .resultados{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     gap: 0.7em;

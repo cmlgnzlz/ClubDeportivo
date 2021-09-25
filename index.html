@@ -14,24 +14,26 @@
 </head>
 <body>
     <header class="header"><!-- header -->
-        <div class="header__equipo"><!-- logo y tituilo -->
-            <div class="header__logo" >
-                <img src="https://www.lnbchile.com/wp-content/uploads/2019/08/cd-castro-logo-200x200.png" alt="Deportes">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 header__equipo"><!-- logo y tituilo -->
+                <div class="header__logo" >
+                    <img src="https://www.lnbchile.com/wp-content/uploads/2019/08/cd-castro-logo-200x200.png" alt="Deportes">
+                </div>
+                <div class="header__titulo">
+                    <h1>CLUB DEPORTIVO</h1>
+                </div>
             </div>
-            <div class="header__titulo">
-                <h1>CLUB DEPORTIVO</h1>
-            </div>
+            <nav class="col-lg-6 col-md-12 header__nav"><!-- navegacion -->
+                <div class="container-fluid nav__pages"> 
+                    <a class="pages_activa" href="./index.html">Inicio</a>
+                    <a href="./pages/equipos.html">Equipos</a>
+                    <a href="./pages/competiciones.html">Competiciones</a>
+                    <a href="./pages/calendario.html">Calendario</a>
+                    <a href="./pages/galeria.html">Galeria</a>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </div>
+            </nav>
         </div>
-        <nav class="header__nav"><!-- navegacion -->
-            <div class="nav__pages"> 
-                <a class="pages_activa" href="./index.html">Inicio</a>
-                <a href="./pages/equipos.html">Equipos</a>
-                <a href="./pages/competiciones.html">Competiciones</a>
-                <a href="./pages/calendario.html">Calendario</a>
-                <a href="./pages/galeria.html">Galeria</a>
-                <a href="./pages/contacto.html">Contacto</a>
-            </div>
-        </nav>
     </header>    
     <main>
         <div class="container-fluid">
@@ -73,39 +75,38 @@
                     </div>
                 </div>
             </div>
-            <div class="row principal">
-                <div class="col-lg-6 col-md-12 redes"><!-- redes sociales -->
-                    <div class="titulo">
-                        <p>Redes Sociales</p>
-                    </div>
-                    <div class="sociales">
-                        <div class="redes-facebook">
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClub-Deportes-Castro-162561870500393&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <div class="row principal">
+                    <div class="col-lg-7 col-md-12 redes"><!-- redes sociales -->
+                        <div class="titulo">
+                            <p>Redes Sociales</p>
                         </div>
-                        <div class="redes-twitter">
-                            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" href="https://twitter.com/deportescastro?ref_src=twsrc%5Etfw">Tweets by deportescastro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                        <div class="container-fluid sociales">
+                            <div class="col-lg-6 redes-facebook">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClub-Deportes-Castro-162561870500393&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
+                            <div class="col-lg-6 redes-twitter">
+                                <a class="twitter-timeline" data-width="350" data-height="500" data-theme="dark" href="https://twitter.com/deportescastro?ref_src=twsrc%5Etfw">Tweets by deportescastro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+                            </div>
                         </div>
-                    </div>
-                </div>    
-                <div class="col-lg-6 col-md-12 ultimos"> <!-- ultimos resultados -->
-                    <div class="titulo">
-                        <p>Ultimos Resultados</p>
-                    </div>
-                    <div class="resultados">
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                        <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
-                    </div>
-                </div> 
-            </div>
-        </div>
+                    </div>    
+                    <div class="col-lg-5 col-md-12 ultimos"> <!-- ultimos resultados -->
+                        <div class="titulo">
+                            <p>Ultimos Resultados</p>
+                        </div>
+                        <div class="resultados">
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                            <div class="resulta2"><p>Local <br> 0 <br><br>0 <br> Visita</p></div>
+                        </div>
+                    </div> 
+                </div>
         </div>
     </main>   
     <footer>
