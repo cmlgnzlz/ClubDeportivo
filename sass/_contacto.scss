@@ -1,0 +1,60 @@
+/* pagina contacto */
+.formulario{
+    font-family: 'Raleway', sans-serif;
+    background-image:linear-gradient(to top,rgb(6, 95, 95),teal) ;
+    color: whitesmoke;
+}
+.formulario legend{
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.formulario fieldset{
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.formulario label{
+    font-weight: 500;
+    padding-left: 40px;
+}
+.formulario input{
+    width: 500px;
+    margin-bottom: 25px;
+}
+.formulario textarea{
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
+.formulario select{
+    width: 200px;
+}
+.formulario [type="reset"]{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.formulario [type="submit"]{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.formulario [type="checkbox"]{
+    width: 200px;
+}
+.formulario [for="acepta"]{
+    font-size: 20px;
+    font-weight: 700;
+}
+.formulario [for="acepta"] a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration:none;
+    color: yellow;
+}
+.formulario fieldset p{
+    padding-top: 20px;
+    font-weight: 900;
+    color: yellow;
+}

@@ -1,0 +1,180 @@
+/* contenido index */
+.principal{
+    background-color: rgba(243, 138, 0, 0.623);
+    /* seccion de noticias */
+    &__noticias{
+        font-family: 'Raleway', sans-serif;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        .noticias{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            &__articulos{
+                padding:15px;
+                border: steelblue;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                .articulo{
+                    color: rgba(22, 22, 22, 0.699);
+                    background-color: rgba(219, 119, 26, 0.425);
+                    margin:10px;
+                    padding:20px;
+                    border: steelblue;
+                    text-align: justify;
+                    font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: space-between;
+                }
+                .articulo:hover{
+                    transform: scale(1.1);
+                }
+                .articulo span{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-content: space-between;
+                }
+                .articulo span a{
+                    text-decoration: none;
+                    color: teal;
+                }
+                .articulo span a:hover{
+                    color: whitesmoke;
+                }
+            }
+            
+        }
+        
+    }
+    
+}
+
+/* seccion de calendario */
+.principal__cal{
+    padding: 20px;
+}
+.cal{
+    display: flex;
+    justify-content: center;
+}
+.cal__cal {
+    display: flex;
+    justify-content: center;
+}
+.cal_grid{
+    overflow: hidden;
+}
+.titulo_calendario{
+    display: flex;
+    justify-content: space-evenly;
+}
+.titulo_calendario p{
+    font-size: 30px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background-color: teal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.calendario_grid{
+    display: grid;
+    grid-template-areas: "dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia""dia dia dia dia dia dia dia";
+}
+.dia{
+    background-color: rgba(255, 224, 224, 0.911);
+    border: 1px solid teal;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(189, 123, 2);
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+}
+.dia:hover{
+    animation: pulse;
+    animation-duration: 0.3s;
+}
+@media only screen and (max-width: 1580px) {
+    .dia {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .dia {
+        width: 62px;
+        height: 62px;
+    }
+}
+  @media only screen and (max-width: 1084px) {
+    .dia {
+        width: 55px;
+        height: 55px;
+    }
+  }
+@media only screen and (max-width: 991px) {
+    .dia {
+        width: 120px;
+        height: 90px;
+    }
+}
+  
+/* seccion redes sociales */
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* seccion de ultimos resultados */
+.ultimos{
+    grid-area: resultados;
+}
+.resultados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 0.7em;
+    padding: 1em;
+}
+.resulta2{
+    background-image: radial-gradient(rgba(255, 206, 149, 0.781) 50%,rgba(236, 130, 10, 0.781));
+    letter-spacing: 0.1em;
+    width: 10em;
+    height: 14em;
+    border: 0.4em dotted teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resulta2 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: rgb(167, 61, 61);
+}
+.resultado:nth-child(even){
+    background-image: radial-gradient(rgba(255, 206, 149, 0.781) 70%,teal);
+    letter-spacing: 3px;
+    width: 6em;
+    height: 8em;
+    border: 0.4em dotted orange;
+}
+.resulta2:hover{
+    animation: headShake;
+    animation-duration: .1s;
+    transform: scale(1.2);
+}

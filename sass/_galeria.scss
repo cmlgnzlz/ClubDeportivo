@@ -1,0 +1,16 @@
+/* pagina galeria */
+.galeria__galeria{
+    margin: auto;
+}
+.galeri{
+    gap: 5px;
+}
+
+.galeri img {
+    max-height: 100%;
+    min-width: 100%;
+}
+.galeri img:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}

@@ -1,0 +1,91 @@
+/* general paginas */
+.pages__titulo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight:900;
+    color: whitesmoke;
+    background-color: teal;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pages__titulo:hover{
+    animation: tada;
+    animation-duration: 1s;
+}
+.pages{
+    background-color: rgba(243, 138, 0, 0.623);
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#ramaFem{
+    color: rgb(31, 29, 29);
+    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal );
+    margin:10px;
+    padding:25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: inline-block;
+	scroll-margin-top: 10em;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#ramaMasc{
+    color: rgb(31, 29, 29);
+    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal );
+    margin:10px;
+    padding:25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: inline-block;
+    scroll-margin-top: 10em;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.ramas{
+    display: inline-block;
+}
+.ramas a .titulo:hover{
+    background-color: whitesmoke;
+    color: teal;
+}
+.ramas .titulo{
+    display: inline-block;
+    padding: 20px;
+}
+/* flecha de regreso arriba */
+.flecha{
+    position: fixed;
+    bottom: 70px;
+    right: 100px;
+    z-index: 99;
+}
+.flecha:hover{
+    animation: wobble;
+    animation-duration: 1s;
+} 
+.arriba{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-top: 15px solid whitesmoke;
+    border-right: 15px solid whitesmoke;
+    transform: rotate(-45deg);
+}
+.cent{
+    position: absolute;
+    width: 70px;
+    height:60px;
+    border-right: 15px solid whitesmoke;
+    transform: translateX(-29px);
+}

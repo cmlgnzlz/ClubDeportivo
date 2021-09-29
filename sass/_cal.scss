@@ -1,0 +1,25 @@
+/* pagina calendario */
+.calendario__calendario{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+.calendario__calendario td{
+    background-color:rgba(199, 223, 223, 0.555); 
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgb(243, 197, 151);  
+    color: rgb(3, 75, 122);
+    font-weight: 600;
+}
+.calendario__calendario tr:hover{
+    background-color:rgba(68, 196, 196, 0.712); 
+
+}
+.calendario__calendario th{
+    font-weight: bolder;
+    background-color: teal;
+    border: 1px solid white;
+    color: whitesmoke;
+}

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+@import "header";
+@import "principal";
+@import "footer";
+@import "objetos";
+@import "equipos";
+@import "comp";
+@import "cal";
+@import "galeria";
+@import "contacto";

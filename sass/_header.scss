@@ -1,0 +1,71 @@
+.header{
+    background-image: linear-gradient(to bottom,orange, rgb(250, 181, 92));
+    z-index: 100;
+    .header__equipo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }    
+    .header__logo{
+        display:block;
+        animation: bounceInDown;
+        animation-duration: 1s;
+    }
+    .header__logo img{
+        height: 7em;
+    }
+    .header__titulo h1{
+        font-family: 'Oswald', sans-serif;
+        font-size: 6em;
+        color: teal;
+        animation: zoomInUp;
+        animation-duration: .7s;
+    }
+    @media only screen and (max-width: 1580px) {
+        .header__titulo h1{
+            font-size: 4em;
+        }
+        .header__logo img{
+            height: 4em;
+        }
+    }
+    .header__nav{
+        font-family: 'Oswald', sans-serif;
+        font-size: 26px;
+        text-transform: uppercase;
+        animation: slideInRight;
+        animation-duration: .7s;
+        display: flex;
+        align-items: center;
+        .pages_activa{
+            padding-left: 5px;
+            background-color: teal;
+            color: whitesmoke;
+            letter-spacing: 2px;
+        }
+        .nav__pages{
+            padding-left: 5px;
+            padding-right: 5px;
+            list-style:none;
+            letter-spacing: 2px;
+            display:inline-block;
+        }
+        .nav__pages a{
+            display: inline;
+            margin: 0;
+            padding: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .nav__pages a:hover{
+            padding-left: 5px;
+            background-color: teal;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            transition: 1s;
+        }
+    }
+}
