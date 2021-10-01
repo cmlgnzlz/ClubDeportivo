@@ -72,29 +72,25 @@
                 <form action=""method="GET">
                     <fieldset>
                         <legend>Formulario de contacto</legend>
+                        <p>Los campos con * son requeridos.</p>
                         <label for="nombre">Nombre*</label>
                         <input type="text" id="nombre" required>
-                        <br><br>
                         <label for="correo">Email*</label>
                         <input type="text" id="correo" required>
-                        <br><br>
                         <label for="rama">Rama*</label>
                         <select name="rama" id="rama">
                             <option value="fem">Femenina</option>
                             <option value="masc">Masculina</option>
                         </select>       
-                        <br><br>
                         <label for="nombre">Comentario*</label>
                         <textarea id="comentario" required></textarea>
-                        <br><br>
-                        <input type="checkbox" required>
-                        <label for="acepta">Acepto los <a href="">terminos</a></label>
-                        <br><br> 
+                        <div class="terminos">
+                            <input type="checkbox" required>
+                            <label for="acepta">Acepto los <a href="">terminos</a></label>
+                        </div>
                         <input type="reset" value="Limpiar">
                         <input type="submit" value="Enviar">
-                        <p>Los campos con * son requeridos.</p>
-                        <br><br>
-                    </fieldset>
+                   </fieldset>
                 </form>
             </div>
         </div>

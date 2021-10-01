@@ -9,6 +9,7 @@ html{
 .header{
     background-image: linear-gradient(to bottom,orange, rgb(250, 181, 92));
     z-index: 100;
+    width: 100%;
 }
 .header__equipo{
     display: flex;
@@ -22,14 +23,20 @@ html{
     animation-duration: 1s;
 }
 .header__logo img{
-    height: 6vw;
+    height: 10vh;
 }
 .header__titulo h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 6vw;
+    font-size: 5vw;
     color: teal;
     animation: zoomInUp;
     animation-duration: .7s;
+}
+
+@media only screen and (max-width: 992px) {
+    .header__titulo h1{
+        font-size: 10vw;
+    }
 }
 .header__nav{
     font-family: 'Oswald', sans-serif;
@@ -70,42 +77,52 @@ html{
     transition: 1s;
 }
 .navbar{
-    visibility: hidden;
-    background-color: rgb(250, 181, 92);
-    align-items: center;
+    display: none;
+    background-color: linear-gradient(to bottom,rgb(250, 181, 92),rgb(250, 181, 92));
 }
 .nav-item{
     font-family: 'Oswald', sans-serif;
-    font-size: 15px;
+    font-size: 3vw;
     text-transform: uppercase;
+    padding: 0.5vh;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .header__nav {
         display: none;
     }
     .navbar{
-        visibility: visible;
+        display: flex;
     }
 }
 .titulo{
     font-family: 'Raleway', sans-serif;
     color:whitesmoke;
-    font-weight:900;
-    font-size: 4vw;
+    font-weight:800;
+    font-size: 2vw;
     background-color:teal;
-    margin:10px;
-    margin-bottom: 30px;
-    padding-left:15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     text-transform: uppercase;
     text-align: center;
     display: block;
+    height: 3vw;
+    margin: 1vw;
+}
+@media only screen and (max-width: 992px) {
+    .titulo{
+        font-size: 4vw;
+        height: 6vw;
+    }
+}
+@media only screen and (max-width: 752px) {
+    .titulo{
+        font-size: 6vw;
+        height: 8vw;
+    }
 }
 .titulo:hover{
     animation: pulse; 
     animation-duration: 1s;
 }
+
 /* contenido index */
 .principal{
     background-color: rgba(243, 138, 0, 0.623);
@@ -275,6 +292,8 @@ html{
     flex-direction: column;
     margin: auto;
     justify-content: center;
+    padding: 2vw;
+    gap: 2vw;
 }
 .redes__facebook{
     justify-content: center;    
@@ -360,7 +379,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 2em;
 }
 .footer__izq p{
     display: block;
@@ -369,26 +387,10 @@ html{
     font-family: 'Raleway', sans-serif;
     padding:5px;
     font-weight: 700;
-}
-@media only screen and (max-width: 952px) {
-    .footer__izq p {
-        font-size: 12px;
-    }
-}
-@media only screen and (max-width: 9745px) {
-    .footer__izq p {
-        font-size: 9px;
-    }
-}
-@media only screen and (max-width: 595px) {
-    .footer__izq p {
-        font-size: 8px;
-    }
-}
-@media only screen and (max-width: 540px) {
-    .footer__izq p {
-        display: none;
-    }
+    font-size: 1.5vw;
+    margin: auto;
+    border-radius: 10px;
+    width: fit-content;
 }
 .footer__logo{
     height: 100px;
@@ -415,11 +417,6 @@ html{
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-}
-.footer p{
-    margin: auto;
-    border-radius: 10px;
-    height: 2em;
 }
 @keyframes texto {
     0%{
@@ -503,7 +500,7 @@ html{
 /* general paginas */
 .pages__titulo{
     font-family: 'Raleway', sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight:900;
     color: whitesmoke;
     background-color: teal;
@@ -518,6 +515,11 @@ html{
 .pages__titulo:hover{
     animation: tada;
     animation-duration: 1s;
+}
+@media only screen and (max-width: 993px) {
+    .pages__titulo{
+        font-size: 8vw;
+    }
 }
 .pages{
     background-color: rgba(243, 138, 0, 0.623);
@@ -556,13 +558,17 @@ html{
 .ramas{
     display: inline-block;
 }
-.ramas a .titulo:hover{
+.ramas a .subtitulo:hover{
     background-color: whitesmoke;
     color: teal;
 }
-.ramas .titulo{
+.ramas .subtitulo{
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: teal;
 }
 /* flecha de regreso arriba */
 .flecha{
@@ -793,18 +799,44 @@ html{
 /* pagina galeria */
 .galeria__galeria{
     margin: auto;
+    width: 80vw;
+}
+.galeria__mini{
+    margin: auto;
+    display: none;
+    width: 80%;
 }
 .galeri{
-    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
 }
-
+.galeri li{
+    height: 20vw;
+    flex-grow: 1;
+    list-style: none;
+}
 .galeri img {
     max-height: 100%;
     min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
 }
 .galeri img:hover{
     transition: 1s;
     transform: scale(1.2);
+}
+li:last-child {
+    flex-grow: 10;
+}
+@media only screen and (max-width: 970px) {
+    .galeria__galeria{
+        display: none;
+    }
+    .galeria__mini{
+        display: block;
+    }
 }
 /* pagina contacto */
 .formulario{
@@ -813,30 +845,41 @@ html{
     color: whitesmoke;
 }
 .formulario legend{
-    padding-left: 25px;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: 800;
+    padding: 2vh;
 }
 .formulario fieldset{
-    padding-top: 60px;
     text-align: center;
     padding-bottom: 40px;
+    
 }
 .formulario label{
-    font-weight: 500;
-    padding-left: 40px;
+    display: block;
+    font-weight: 700;
 }
 .formulario input{
-    width: 500px;
+    width: 525px;
     margin-bottom: 25px;
+}
+@media only screen and (max-width: 550px) {
+    .formulario input{
+        width: 300px;
+    }
 }
 .formulario textarea{
     width: 500px;
     height: 200px;
     resize: none;
 }
+@media only screen and (max-width: 550px) {
+    .formulario textarea{
+        width: 300px;
+    }
+}
 .formulario select{
     width: 200px;
+    margin-bottom: 20px;
 }
 .formulario [type="reset"]{
     width: 200px;
@@ -849,7 +892,13 @@ html{
     font-weight: 600;
 }
 .formulario [type="checkbox"]{
-    width: 200px;
+        margin-top: 1vh;
+        width: 20px;
+}
+.terminos{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
 }
 .formulario [for="acepta"]{
     font-size: 20px;
@@ -862,7 +911,6 @@ html{
     color: yellow;
 }
 .formulario fieldset p{
-    padding-top: 20px;
     font-weight: 900;
     color: yellow;
 }
