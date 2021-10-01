@@ -3,58 +3,74 @@
     font-family: 'Raleway', sans-serif;
     background-image:linear-gradient(to top,rgb(6, 95, 95),teal) ;
     color: whitesmoke;
+    legend{
+        font-size: 4vw;
+        font-weight: 800;
+        padding: 2vh;
+    }
+    fieldset{
+        text-align: center;
+        padding-bottom: 40px;
+        
+    }
+    label{
+        display: block;
+        font-weight: 700;
+    }
+    input{
+        width: 525px;
+        margin-bottom: 25px;
+    }
+    textarea{
+        width: 500px;
+        height: 200px;
+        resize: none;
+    }
+    select{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    [type="reset"]{
+        width: 200px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    [type="submit"]{
+        width: 200px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    [type="checkbox"]{
+        margin-top: 1vh;
+        width: 20px;
+    }
+    [for="acepta"]{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    [for="acepta"] a{
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration:none;
+        color: yellow;
+    }
+    fieldset{
+        p{
+            font-weight: 900;
+            color: yellow;
+        }
+    } 
 }
-.formulario legend{
-    padding-left: 25px;
-    font-size: 20px;
-    font-weight: 800;
+@media only screen and (max-width: 550px) {
+    .formulario input{
+        width: 300px;
+    }
+    .formulario textarea{
+        width: 300px;
+    }
 }
-.formulario fieldset{
-    padding-top: 60px;
-    text-align: center;
-    padding-bottom: 40px;
-}
-.formulario label{
-    font-weight: 500;
-    padding-left: 40px;
-}
-.formulario input{
-    width: 500px;
-    margin-bottom: 25px;
-}
-.formulario textarea{
-    width: 500px;
-    height: 200px;
-    resize: none;
-}
-.formulario select{
-    width: 200px;
-}
-.formulario [type="reset"]{
-    width: 200px;
-    font-size: 20px;
-    font-weight: 600;
-}
-.formulario [type="submit"]{
-    width: 200px;
-    font-size: 20px;
-    font-weight: 600;
-}
-.formulario [type="checkbox"]{
-    width: 200px;
-}
-.formulario [for="acepta"]{
-    font-size: 20px;
-    font-weight: 700;
-}
-.formulario [for="acepta"] a{
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration:none;
-    color: yellow;
-}
-.formulario fieldset p{
-    padding-top: 20px;
-    font-weight: 900;
-    color: yellow;
+.terminos{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
 }

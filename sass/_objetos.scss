@@ -1,11 +1,10 @@
 /* general paginas */
 .pages__titulo{
     font-family: 'Raleway', sans-serif;
-    font-size: 70px;
+    font-size: 4vw;
     font-weight:900;
     color: whitesmoke;
     background-color: teal;
-    display:block;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -13,10 +12,15 @@
     width: max-content;
     padding-left: 20px;
     padding-right: 20px;
+    &:hover{
+        animation: tada;
+        animation-duration: 1s;
+    }
 }
-.pages__titulo:hover{
-    animation: tada;
-    animation-duration: 1s;
+@media only screen and (max-width: 993px) {
+    .pages__titulo{
+        font-size: 8vw;
+    }
 }
 .pages{
     background-color: rgba(243, 138, 0, 0.623);
@@ -54,26 +58,60 @@
 }
 .ramas{
     display: inline-block;
+    a{
+        .subtitulo{
+            display: inline-block;
+            padding: 10px;
+            font-family: 'Raleway', sans-serif;
+            color: whitesmoke;
+            font-weight: 600;
+            background-color: teal;
+            &:hover{
+                background-color: whitesmoke;
+                color: teal;
+            }
+        }
+    }
 }
-.ramas a .titulo:hover{
-    background-color: whitesmoke;
-    color: teal;
+.titulo{
+    font-family: 'Raleway', sans-serif;
+    color:whitesmoke;
+    font-weight:800;
+    font-size: 2vw;
+    background-color:teal;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    height: 3vw;
+    margin: 1vw;
+    &:hover{
+        animation: pulse; 
+        animation-duration: 1s;
+    }
 }
-.ramas .titulo{
-    display: inline-block;
-    padding: 20px;
+@media only screen and (max-width: 992px) {
+    .titulo{
+        font-size: 4vw;
+        height: 6vw;
+    }
+}
+@media only screen and (max-width: 752px) {
+    .titulo{
+        font-size: 6vw;
+        height: 8vw;
+    }
 }
 /* flecha de regreso arriba */
 .flecha{
     position: fixed;
-    bottom: 70px;
+    bottom: 80px;
     right: 100px;
     z-index: 99;
+    &:hover{
+        animation: wobble;
+        animation-duration: 1s;
+    } 
 }
-.flecha:hover{
-    animation: wobble;
-    animation-duration: 1s;
-} 
 .arriba{
     position: absolute;
     width: 70px;

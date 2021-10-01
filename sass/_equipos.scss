@@ -4,23 +4,33 @@
     width: 80%;
     margin: auto;
     font-family: 'Raleway', sans-serif;
+    td{
+        background-color:rgba(255, 255, 255, 0.603); 
+        text-align: left;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px solid peru;  
+        color: black;
+    }
+    tr:hover{
+        background-color: rgba(255, 255, 255, 0.699);
+    }
+    th{
+        font-weight: bolder;
+        background-color: teal;
+        border: 1px solid white;
+        color: whitesmoke;
+        font-size: 25px;
+    }
 }
-.plantel td{
-    background-color:rgba(255, 255, 255, 0.603); 
-    text-align: left;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    border: 1px solid peru;  
-    color: black;
-}
-.plantel tr:hover{
-    background-color: rgba(255, 255, 255, 0.699);
-}
-.plantel th{
-    font-weight: bolder;
-    background-color: teal;
-    border: 1px solid white;
-    color: whitesmoke;
-    font-size: 25px;
+@media only screen and (max-width: 654px) {
+    .plantel td{
+        font-size: 3vw;
+        padding: 5px;
+    }
+    .plantel th{
+        font-size: 3vw;
+        padding: 5px;
+    }
 }
