@@ -29,7 +29,7 @@
     height: 100px;
     margin: auto;
     display:block;
-    :hover{
+    &:hover{
         animation-name: botar;
         animation-duration: 2s;
         animation-timing-function: linear;

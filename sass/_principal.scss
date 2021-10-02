@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    :hover{
+    &:hover{
         transform: scale(1.1);
     }
     span{
@@ -44,7 +44,7 @@
         a{
             text-decoration: none;
             color: teal;
-            :hover{
+            &:hover{
                 color: whitesmoke;
             }
         }
@@ -97,64 +97,21 @@
         animation-duration: 0.3s;
     }
 }
-@media only screen and (max-width: 1580px) {
-    .dia {
-        width: 75px;
-        height: 75px;
+/* Adecuacion al responsive del calendario de index mediante bucles*/
+@for $i from 1 to 8 {
+    @media only screen and (max-width: 1710px-100*$i) {
+        .dia {
+            width: 80px - 5*$i;
+            height: 80px - 5* $i;
+        }
     }
 }
-@media only screen and (max-width: 1300px) {
-    .dia {
-        width: 62px;
-        height: 62px;
-    }
-}
-@media only screen and (max-width: 1084px) {
-    .dia {
-        width: 55px;
-        height: 55px;
-    }
-}
-@media only screen and (max-width: 991px) {
-    .dia {
-        width: 120px;
-        height: 90px;
-    }
-}
-@media only screen and (max-width: 950px) {
-    .dia {
-        width: 100px;
-        height: 80px;
-    }
-}
-@media only screen and (max-width: 750px) {
-    .dia {
-        width: 80px;
-        height: 70px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .dia {
-        width: 70px;
-        height: 70px;
-    }
-}
-@media only screen and (max-width: 550px) {
-    .dia {
-        width: 60px;
-        height: 60px;
-    }
-}
-@media only screen and (max-width: 465px) {
-    .dia {
-        width: 50px;
-        height: 50px;
-    }
-}
-@media only screen and (max-width: 464px) {
-    .dia {
-        width: 40px;
-        height: 40px;
+@for $i from 1 to 12 {
+    @media only screen and (max-width: 1000px-50*$i) {
+        .dia {
+            width: 110px - 5*$i;
+            height: 90px - 5*$i;
+        }
     }
 }
 /* seccion redes sociales */
