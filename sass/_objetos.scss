@@ -1,10 +1,10 @@
 /* general paginas */
 .pages__titulo{
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontPrincipal;
     font-size: 4vw;
     font-weight:900;
-    color: whitesmoke;
-    background-color: teal;
+    color: $colorSecund;
+    background-color: $colorPrim;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -32,10 +32,10 @@
 }
 #ramaFem{
     color: rgb(31, 29, 29);
-    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal );
+    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), $colorPrim );
     margin:10px;
     padding:25px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontPrincipal;
     text-align: center;
     display: inline-block;
 	scroll-margin-top: 10em;
@@ -45,10 +45,10 @@
 }
 #ramaMasc{
     color: rgb(31, 29, 29);
-    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal );
+    background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), $colorPrim );
     margin:10px;
     padding:25px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $fontPrincipal;
     text-align: center;
     display: inline-block;
     scroll-margin-top: 10em;
@@ -62,23 +62,23 @@
         .subtitulo{
             display: inline-block;
             padding: 10px;
-            font-family: 'Raleway', sans-serif;
-            color: whitesmoke;
+            font-family: $fontPrincipal;
+            color: $colorSecund;
             font-weight: 600;
-            background-color: teal;
+            background-color: $colorPrim;
             &:hover{
-                background-color: whitesmoke;
-                color: teal;
+                background-color: $colorSecund;
+                color: $colorPrim;
             }
         }
     }
 }
 .titulo{
-    font-family: 'Raleway', sans-serif;
-    color:whitesmoke;
+    font-family: $fontPrincipal;
+    color: $colorSecund;
     font-weight:800;
     font-size: 2vw;
-    background-color:teal;
+    background-color:$colorPrim;
     text-transform: uppercase;
     text-align: center;
     display: block;
@@ -116,14 +116,14 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    border-top: 15px solid whitesmoke;
-    border-right: 15px solid whitesmoke;
+    border-top: 15px solid $colorSecund;
+    border-right: 15px solid $colorSecund;
     transform: rotate(-45deg);
 }
 .cent{
     position: absolute;
     width: 70px;
     height:60px;
-    border-right: 15px solid whitesmoke;
+    border-right: 15px solid $colorSecund;
     transform: translateX(-29px);
 }

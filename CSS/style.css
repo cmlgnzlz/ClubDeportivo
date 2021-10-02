@@ -139,7 +139,7 @@ html {
 
 /* seccion de noticias */
 .principal__noticias {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +259,7 @@ html {
 
 .titulo_calendario p {
   font-size: 30px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   color: whitesmoke;
@@ -522,7 +522,7 @@ html {
   letter-spacing: 0.1em;
   width: 10em;
   height: 14em;
-  border: 0.4em dotted teal;
+  border: 0.4em dotted whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,7 +536,7 @@ html {
 }
 
 .resulta2 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.6em;
   font-weight: 900;
   color: #a73d3d;
@@ -589,7 +589,7 @@ html {
   display: block;
   color: whitesmoke;
   background-color: teal;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 5px;
   font-weight: 700;
   font-size: 1.5vw;
@@ -796,7 +796,7 @@ html {
 
 /* general paginas */
 .pages__titulo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 4vw;
   font-weight: 900;
   color: whitesmoke;
@@ -847,7 +847,7 @@ html {
   background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal);
   margin: 10px;
   padding: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   display: inline-block;
   scroll-margin-top: 10em;
@@ -862,7 +862,7 @@ html {
   background-image: linear-gradient(to bottom, rgba(243, 138, 0, 0.623), teal);
   margin: 10px;
   padding: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   display: inline-block;
   scroll-margin-top: 10em;
@@ -878,7 +878,7 @@ html {
 .ramas a .subtitulo {
   display: inline-block;
   padding: 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: whitesmoke;
   font-weight: 600;
   background-color: teal;
@@ -890,7 +890,7 @@ html {
 }
 
 .titulo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: whitesmoke;
   font-weight: 800;
   font-size: 2vw;
@@ -962,7 +962,7 @@ html {
   border-collapse: collapse;
   width: 80%;
   margin: auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .plantel td {
@@ -982,7 +982,7 @@ html {
 .plantel th {
   font-weight: bolder;
   background-color: teal;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   color: whitesmoke;
   font-size: 25px;
 }
@@ -1039,7 +1039,7 @@ html {
   text-decoration: none;
   color: whitesmoke;
   background-color: rgba(37, 211, 211, 0.295);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 30px;
 }
@@ -1086,7 +1086,7 @@ html {
 .competicionFem_anho th {
   font-weight: bolder;
   background-color: teal;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   color: whitesmoke;
 }
 
@@ -1135,7 +1135,7 @@ html {
 .competicionMasc_anho th {
   font-weight: bolder;
   background-color: teal;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   color: whitesmoke;
 }
 
@@ -1178,7 +1178,7 @@ html {
 .calendario__calendario th {
   font-weight: bolder;
   background-color: teal;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   color: whitesmoke;
 }
 

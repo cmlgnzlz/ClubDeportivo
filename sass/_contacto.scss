@@ -1,8 +1,8 @@
 /* pagina contacto */
 .formulario{
     font-family: 'Raleway', sans-serif;
-    background-image:linear-gradient(to top,rgb(6, 95, 95),teal) ;
-    color: whitesmoke;
+    background-image:linear-gradient(to top,rgb(6, 95, 95),$colorPrim) ;
+    color: $colorSecund;
     legend{
         font-size: 4vw;
         font-weight: 800;

@@ -22,7 +22,7 @@
     h1{
         font-family: 'Oswald', sans-serif;
         font-size: 5vw;
-        color: teal;
+        color: $colorPrim;
         animation: zoomInUp;
         animation-duration: .7s;
     }
@@ -44,7 +44,7 @@
 }
 .pages_activa{
     padding-left: 5px;
-    background-color: teal;
+    background-color: $colorPrim;
     color: whitesmoke;
     letter-spacing: 2px;
 }
@@ -64,8 +64,8 @@
         color: whitesmoke;
         &:hover{
             padding-left: 5px;
-            background-color: teal;
-            color: whitesmoke;
+            background-color: $colorPrim;
+            color: $colorSecund;
             letter-spacing: 2px;
             transition: 1s;
         }

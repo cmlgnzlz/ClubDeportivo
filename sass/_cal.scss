@@ -18,9 +18,9 @@
     }
     th{
         font-weight: bolder;
-        background-color: teal;
-        border: 1px solid white;
-        color: whitesmoke;
+        background-color: $colorPrim;
+        border: 1px solid $colorSecund;
+        color: $colorSecund;
     }
 }
 @media only screen and (max-width: 740px) {
