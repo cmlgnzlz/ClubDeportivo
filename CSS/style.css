@@ -219,6 +219,12 @@ html {
 
 .articulo span a:hover {
   color: whitesmoke;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.articulo h3 {
+  color: whitesmoke;
 }
 
 /* seccion de calendario */

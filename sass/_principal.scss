@@ -46,8 +46,13 @@
             color: $colorPrim;
             &:hover{
                 color: $colorSecund;
+                color: whitesmoke;
+                font-weight: 700;
             }
         }
+    }
+    h3{
+        color: whitesmoke;
     }
 }
 /* seccion de calendario */
